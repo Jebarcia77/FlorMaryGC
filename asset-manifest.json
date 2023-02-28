@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/flormarygc/static/css/main.ff6817a9.chunk.css",
+    "main.js": "/flormarygc/static/js/main.b9f5da15.chunk.js",
+    "main.js.map": "/flormarygc/static/js/main.b9f5da15.chunk.js.map",
+    "runtime-main.js": "/flormarygc/static/js/runtime-main.03e8c3d2.js",
+    "runtime-main.js.map": "/flormarygc/static/js/runtime-main.03e8c3d2.js.map",
+    "static/js/2.21b8642f.chunk.js": "/flormarygc/static/js/2.21b8642f.chunk.js",
+    "static/js/2.21b8642f.chunk.js.map": "/flormarygc/static/js/2.21b8642f.chunk.js.map",
+    "static/js/3.a2f11253.chunk.js": "/flormarygc/static/js/3.a2f11253.chunk.js",
+    "static/js/3.a2f11253.chunk.js.map": "/flormarygc/static/js/3.a2f11253.chunk.js.map",
+    "index.html": "/flormarygc/index.html",
+    "static/css/main.ff6817a9.chunk.css.map": "/flormarygc/static/css/main.ff6817a9.chunk.css.map",
+    "static/js/2.21b8642f.chunk.js.LICENSE.txt": "/flormarygc/static/js/2.21b8642f.chunk.js.LICENSE.txt",
+    "static/media/customerpred.1c582166.jpg": "/flormarygc/static/media/customerpred.1c582166.jpg",
+    "static/media/eda.e79d7fe3.jpg": "/flormarygc/static/media/eda.e79d7fe3.jpg",
+    "static/media/experience.1f8b3256.svg": "/flormarygc/static/media/experience.1f8b3256.svg",
+    "static/media/footer.00b1bd59.svg": "/flormarygc/static/media/footer.00b1bd59.svg",
+    "static/media/guuk.3a85bc14.png": "/flormarygc/static/media/guuk.3a85bc14.png",
+    "static/media/gvconboarding.12e8611c.png": "/flormarygc/static/media/gvconboarding.12e8611c.png",
+    "static/media/hero.0032f3de.svg": "/flormarygc/static/media/hero.0032f3de.svg",
+    "static/media/hero_illustration.b2cf3f99.svg": "/flormarygc/static/media/hero_illustration.b2cf3f99.svg",
+    "static/media/loan.9d2192be.jpeg": "/flormarygc/static/media/loan.9d2192be.jpeg",
+    "static/media/mct.67a67bf0.jpg": "/flormarygc/static/media/mct.67a67bf0.jpg",
+    "static/media/myapp.acecb0f5.png": "/flormarygc/static/media/myapp.acecb0f5.png",
+    "static/media/pamm.5aa03602.png": "/flormarygc/static/media/pamm.5aa03602.png",
+    "static/media/project.c3adbceb.svg": "/flormarygc/static/media/project.c3adbceb.svg",
+    "static/media/skills.be17e1cd.svg": "/flormarygc/static/media/skills.be17e1cd.svg",
+    "static/media/smartme.14f56e52.png": "/flormarygc/static/media/smartme.14f56e52.png",
+    "static/media/social.3b26a540.jpg": "/flormarygc/static/media/social.3b26a540.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03e8c3d2.js",
+    "static/js/2.21b8642f.chunk.js",
+    "static/css/main.ff6817a9.chunk.css",
+    "static/js/main.b9f5da15.chunk.js"
+  ]
+}
