@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Jebarcia77.github.io/eportfolio",
+  "homepage": "http://Jebarcia77.github.io/flormarygc",
   "name": "awesome-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -27,8 +27,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
