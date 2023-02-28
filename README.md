@@ -1,7 +1,6 @@
 
-# John Barcia Portfolio
+# FLOR MARIA GONGORA Portafolio
 
-Projects made 2020-2022
 
 PASOS:
 - Instalar gh-pages:
