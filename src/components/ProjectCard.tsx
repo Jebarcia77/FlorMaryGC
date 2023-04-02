@@ -8,13 +8,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectImageLogo,
   tech,
   buttonText,
-  link,
+  link = "",
   id,
 }) => {
   return (
     <motion.div transition={{ duration: 0.25 }} key={id}>
       <div
-      style={{height:"100%"}}
+        style={{ height: "100%" }}
         className={`mx-6 card ${
           id % 2 === 0
             ? `bg-secondary text-secondary-content`
@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="max-w-sm card-body">
           <h2 className="card-title ">{projectName}</h2>
           <p>{projectDescription}</p>
-          <div className="flex" style={{flexWrap:'wrap'}}>
+          <div className="flex" style={{ flexWrap: "wrap" }}>
             {tech.map((tech) => (
               <div
                 className={`my-2 mr-2 badge ${
@@ -45,17 +45,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
           </div>
           <div className="card-actions">
-            <a href={link}>
-              <button
-                className={`rounded-full btn ${
-                  id % 2 === 0
-                    ? `text-primary-content btn-primary`
-                    : `text-secondary-content btn-secondary`
-                }`}
-              >
-                {buttonText}
-              </button>
-            </a>
+            {link && (
+              <a href={link}>
+                <button
+                  className={`rounded-full btn ${
+                    id % 2 === 0
+                      ? `text-primary-content btn-primary`
+                      : `text-secondary-content btn-secondary`
+                  }`}
+                >
+                  {buttonText}
+                </button>
+              </a>
+            )}
           </div>
         </div>
       </div>

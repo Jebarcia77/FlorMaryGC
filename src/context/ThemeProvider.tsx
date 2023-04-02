@@ -7,7 +7,7 @@ export type ThemeContextProps = {
 };
 
 export const ThemeContext = createContext<ThemeContextProps>({
-  theme: "mytheme",
+  theme: "Emerald",
   setTheme: () => {},
 });
 

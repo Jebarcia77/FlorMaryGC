@@ -10,7 +10,36 @@ import loan from "../assets/loan.jpeg";
 import customerpred from "../assets/customerpred.jpg";
 
 import profilePhoto from "../assets/profilePhoto.jpeg";
+
+import cos1 from "../assets/cos8.jpeg";
+import cos2 from "../assets/cos6.png";
+import cos3 from "../assets/cos3.jpeg";
+import cos4 from "../assets/cos6.jpeg";
+import cos5 from "../assets/cos1.jpeg";
+import cos6 from "../assets/cos4.jpeg";
+
 import fisio1 from "../assets/fisio1.png";
+import fisio2 from "../assets/fisio2.jpeg";
+import fisio3 from "../assets/fisio4.jpeg";
+import fisio4 from "../assets/fisio3.jpeg";
+
+import cert1 from "../assets/cert5.png";
+import cert2 from "../assets/cert10.png";
+import cert3 from "../assets/cert1.jpeg";
+import cert4 from "../assets/cert3.png";
+import cert5 from "../assets/cert4.png";
+import cert6 from "../assets/cert8.png";
+import cert7 from "../assets/cert6.png";
+import cert8 from "../assets/cert7.png";
+import cert9 from "../assets/cert1.png";
+import cert10 from "../assets/cert9.png";
+import cert11 from "../assets/cert14.png";
+import cert12 from "../assets/cert13.png";
+
+import enf1 from "../assets/enf1.png";
+
+import lab1 from "../assets/lab1.jpeg";
+import lab2 from "../assets/lab2.jpeg";
 
 import {
   ImageType,
@@ -20,24 +49,25 @@ import {
   TimelineProps,
 } from "../types/types";
 export const URL = "https://awesome-portfolio.piyushmehta.com";
-export const NAME = "Flor María Gongora - Esteticista ";
+export const NAME = "Flor María - Esteticista ";
 
 export const SECTIONS = [
   "Inicio",
   "Experiencia",
   "Habilidades Y competencias",
   "Estética y Cosmeatría",
-  "Auxiliar de Enfermería",
+  "Fisioterapia y Rehabilitación Física",
+  "Auxiliar de Enfermería y Laboratorio",
+  "Académico",
 ];
 export const HERO_IMAGE = profilePhoto;
-export const CTA_TEXT = "Know More";
+export const CTA_TEXT = "Conoce más";
 export const MENU: MenuProps[] = [
   { key: 1, route: "home", name: SECTIONS[0] },
-  { key: 2, route: "experience", name: SECTIONS[1] },
-  { key: 3, route: "Web development projects", name: SECTIONS[2] },
-  { key: 3, route: "Data analytics projects", name: SECTIONS[3] },
-  { key: 4, route: "skills", name: SECTIONS[4] },
-  { key: 5, route: "Education", name: SECTIONS[5] },
+  { key: 2, route: "estetica", name: SECTIONS[3] },
+  { key: 3, route: "fisio", name: SECTIONS[4] },
+  { key: 4, route: "lab", name: SECTIONS[5] },
+  { key: 5, route: "acad", name: SECTIONS[6] },
 ];
 
 export const GREETING_TEXT =
@@ -88,11 +118,11 @@ export const EXPERIENCE: TimelineProps[] = [
   },
 ];
 export const KEYWORDS = [
-  "Developer",
-  "Data Science",
-  "Data Analytics",
-  "front end developer based in Ecuador",
-  "John Barcia",
+  "Esteticista",
+  "Cosmeatra",
+  "Belleza",
+  "Estetica",
+  "Enfermeria",
   "E Portfolio",
 ];
 export const IMAGE: ImageType = {
@@ -101,120 +131,291 @@ export const IMAGE: ImageType = {
   width: "314",
 };
 
-export const projects: ProjectCardProps[] = [
+export const cosmeatriaData: ProjectCardProps[] = [
   {
     id: 1,
-    projectName: "Servinarium",
+    projectName: "Limpiezas faciales profundas",
     projectDescription:
-      "Servinarium is a tool for companies that provide services, aimed at monitoring day-to-day operations in order to keep control in an orderly, fast and secure manner. I developed the front and back with a partner.",
-    projectImageLogo: `https://www.servinarium.com/wp-content/uploads/2021/12/control-de-talleres-servinarium.png`,
-    link: "https://www.servinarium.com/",
+      "La imagen ilustra una limpieza facial profunda en un centro estético, donde se aplica un exfoliante para eliminar impurezas y mejorar la apariencia de la piel, logrando un rostro fresco y rejuvenecido.",
+    projectImageLogo: cos1,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
     buttonText: "View Project",
     tech: [
-      "Javascript",
-      "React Native",
-      "TailwindCSS",
-      "SCSS",
-      "NodeJs",
-      "MySQL",
+      "Exfoliación",
+      "Hidratación",
+      "Mascarillas",
+      "Extracción comedones",
+      "Microdermoabrasión",
     ],
   },
   {
     id: 2,
-    projectName: "GVC Onboarding",
+    projectName: "Aplicacion capilar de plasma",
     projectDescription:
-      "Online onboarding webpage serving GVC GAESCO España with dynamics forms and validations, microservices, angular material, pdf generation. I Developed and implemented an onboarding page for a new user registration process, including fields for personal information and account setup, data validation and error handling.",
-    projectImageLogo: fisio1,
-    link: "https://onboarding.gvcgaesco.es/?hs_step=bienvenida/es",
+      "Se inyecta plasma rico en plaquetas en el cuero cabelludo para estimular el crecimiento del cabello y fortalecer los folículos, mejorando así la salud capilar.",
+    projectImageLogo: cos2,
+    //link: "https://jebarcia77.github.io/Potential-Customers-Prediction/",
     buttonText: "View Project",
-    tech: ["Typescript", "Angular", "SCSS", "AWS"],
+    tech: [
+      "Plasma rio en plaquetas",
+      "Anticaída",
+      "Crecuimiento cabello",
+      "Biostimulación capilar",
+      "Fortalecimiento de foliculos",
+    ],
   },
   {
     id: 3,
-    projectName: "Guuk FrontOffice/BackOffice",
+    projectName: "Tratamientos de verrugas",
     projectDescription:
-      "A complete onboarding and  dashboard built for the branch Offices and vendors from Guuk(España) to generate orders and contracts for new and older clients. I developed developed a full-featured software solution that included both an attractive user interface for the front-office and an administrative task management system for the back-office.",
-    projectImageLogo: guukImage,
-    link: "https://guuk.initiumsoft.com/web/",
+      "Procedimiento de electrocirugía para eliminar verrugas, en el cual se emplea una corriente eléctrica controlada para extirpar las verrugas de manera precisa y eficaz, logrando una piel más uniforme y saludable.",
+    projectImageLogo: cos3,
+    //link: "https://jebarcia77.github.io/Marketing-Campaign-Analysis/",
     buttonText: "View Project",
     tech: [
-      "Typescript",
-      "React/ReactNative",
-      "SCSS",
-      "MaterialUI",
-      "NodeJs",
-      "MySQL",
-      "AWS",
+      "Electrocirugía",
+      "Crioterapia",
+      "Tópicos",
+      "Eliminación de verrugas",
     ],
   },
   {
     id: 4,
-    projectName: "SmartmeAnalytics Dashboard",
+    projectName: "Tratamientos de Fototerapia",
     projectDescription:
-      "A complete Comprehensive dashboard built for the administrators of Smartme App. Used to track their growth, their reach, and trends in their products and services, I worked in front and back, in a team of 3 developers.",
-    projectImageLogo: smartmeImg,
-    link: "http://pre.admin.smartmeapp.com/login",
+      "se utiliza luz de diferentes longitudes de onda para tratar diversos problemas cutáneos, como envejecimiento, acné o inflamación, mejorando la apariencia y salud de la piel de forma no invasiva.",
+    projectImageLogo: cos4,
+    //link: "https://jebarcia77.github.io/Marketing-Campaign-Analysis/",
     buttonText: "View Project",
-    tech: ["Javascript", "React", "SCSS", "MYSQL", "AWS"],
+    tech: [
+      "Terapia LED Facial",
+      "Fototerapia Antiacne",
+      "Estimulacion de colágeno con luz",
+    ],
   },
   {
     id: 5,
-    projectName: "Health care portal Mercantil-PAMM",
-    projectDescription:
-      "I Developed and implemented a medical services platform for providers, patients, doctors, a user-friendly interface for scheduling medical appointments, accessing patient medical history.",
-    projectImageLogo: pammImage,
-    link: "https://www.mercantilseguros.com/index.html",
+    projectName: "Tratamiento Facial",
+    projectDescription: "",
+    projectImageLogo: cos5,
+    //link: "https://jebarcia77.github.io/Marketing-Campaign-Analysis/",
     buttonText: "View Project",
-    tech: ["Typescript", "React", "SCSS", "Material UI", "NodeJs", "MYSQL"],
+    tech: ["Rejuvenecimiento", "Antiacne", "Hidratación", "Cuidado Facial"],
   },
   {
     id: 6,
-    projectName: "MyBusisnessApp (onGoing)",
-    projectDescription:
-      "A complete Comprehensive dashboard built for the influencers. Used to track their growth and reach.",
-    projectImageLogo: myappImg,
-    link: "",
+    projectName: "Tratamiento Facial",
+    projectDescription: "",
+    projectImageLogo: cos6,
+    //link: "https://jebarcia77.github.io/Marketing-Campaign-Analysis/",
     buttonText: "View Project",
-    tech: ["ReactcNative", "FastAPI", "MongoDB"],
+    tech: ["Rejuvenecimiento", "Antiacne", "Hidratación", "Cuidado Facial"],
   },
 ];
 
-export const projectsData: ProjectCardProps[] = [
+export const labData: ProjectCardProps[] = [
   {
     id: 1,
-    projectName: "Bank Loan Default Prediction",
-    projectDescription:
-      "The project focuses in identify defaulters to reduce losses allowing Bad customers to get loans, it this a classfication problem with labeled data",
-    projectImageLogo: loan,
-    link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    projectName: "Auxiliar de Enfermería",
+    projectDescription: "",
+    projectImageLogo: enf1,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
     buttonText: "View Project",
     tech: [
-      "Logistic Regression",
-      "Decision Trees",
-      "Random Forest",
-      "Hyperparameter Tuning",
+      "Inyectología",
+      "Primeros Auxilios / medios/ avanzados",
+      "Sutura",
+      "Enfermería",
     ],
   },
   {
     id: 2,
-    projectName: "Predicting the conversion of leads to customer",
-    projectDescription:
-      "This project involves identifying which leads are more likely to convert to paid customers based on attributes of leads and their interaction details",
-    projectImageLogo: customerpred,
-    link: "https://jebarcia77.github.io/Potential-Customers-Prediction/",
+    projectName: "Auxiliar de Laboratorio Clínico",
+    projectDescription: "",
+    projectImageLogo: lab1,
+    //link: "https://jebarcia77.github.io/Potential-Customers-Prediction/",
     buttonText: "View Project",
-    tech: ["Decision Trees", "Random Forest", "Python", "EDA"],
+    tech: ["Recepción de Muestras", "Análisis", "Aparatología", "Limpieza"],
   },
   {
     id: 3,
-    projectName:
-      "Analyzing marketing campaigns to help the CMO devise the next best marketing strategy.",
-    projectDescription:
-      "This project aims to analyze marketing campaign and sales data to address important business questions related to customer demographics, product preferences, channel performances, etc",
-    projectImageLogo: eda,
-    link: "https://jebarcia77.github.io/Marketing-Campaign-Analysis/",
+    projectName: "Auxiliar de Laboratorio Clínico",
+    projectDescription: "",
+    projectImageLogo: lab2,
+    //link: "https://jebarcia77.github.io/Marketing-Campaign-Analysis/",
     buttonText: "View Project",
-    tech: ["Python", "Data analysis & Visualization"],
+    tech: ["Recepción de Muestras", "Análisis", "Aparatología", "Limpieza"],
+  },
+];
+export const eduData: ProjectCardProps[] = [
+  {
+    id: 1,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert1,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 2,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert2,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 3,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert3,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 4,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert4,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 5,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert5,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 6,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert6,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 7,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert7,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 8,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert8,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 9,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert9,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 10,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert10,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 11,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert11,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+  {
+    id: 12,
+    projectName: "",
+    projectDescription: "",
+    projectImageLogo: cert12,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [],
+  },
+];
+
+export const fisioData: ProjectCardProps[] = [
+  {
+    id: 1,
+    projectName: "Terapia y relajación lumbar",
+    projectDescription:
+      "sesión de terapia y relajación lumbar, en la que se aplican técnicas de masaje, estiramientos y ejercicios específicos para aliviar el dolor y la tensión en la región lumbar, promoviendo el bienestar y la movilidad.",
+    projectImageLogo: fisio1,
+    //link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
+    buttonText: "View Project",
+    tech: [
+      "Masajes terpéuticos",
+      "Relajación muscular",
+      "Terapia de calor y frío",
+      "Piedras calientes",
+      "Piedras calientes",
+    ],
+  },
+  {
+    id: 2,
+    projectName: "Cuidado y rehabilitacion de adultos mayores",
+    projectDescription:
+      "Cuidado y rehabilitación de adultos mayores en un centro especializado, donde se brinda apoyo en ejercicios terapéuticos y actividades de la vida diaria, promoviendo la independencia, movilidad y calidad de vida de los ancianos.",
+    projectImageLogo: fisio2,
+    //link: "https://jebarcia77.github.io/Potential-Customers-Prediction/",
+    buttonText: "View Project",
+    tech: [
+      "Terapia Ocupacional",
+      "Fisioterpia geriátrica",
+      "Rehabilitación post cirugía",
+      "Estimulación",
+    ],
+  },
+  {
+    id: 3,
+    projectName: "Masajes y terapias musculares",
+    projectDescription:
+      "Sesión de masajes y terapias musculares, donde se aplican técnicas de masaje y estiramientos para aliviar tensiones, mejorar la circulación y favorecer la recuperación y flexibilidad de músculos y tejidos conectivos.",
+    projectImageLogo: fisio3,
+    //link: "https://jebarcia77.github.io/Marketing-Campaign-Analysis/",
+    buttonText: "View Project",
+    tech: ["Masaje Deportivo", "Drenajes Linfáticos", "Quiromasajes"],
+  },
+  {
+    id: 4,
+    projectName: "Masajes de relación",
+    projectDescription:
+      "Se emplea suaves técnicas de masaje y aromaterapia para liberar tensiones, reducir el estrés y promover la tranquilidad y el equilibrio físico y mental del cliente.",
+    projectImageLogo: fisio4,
+    //link: "https://jebarcia77.github.io/Marketing-Campaign-Analysis/",
+    buttonText: "View Project",
+    tech: [
+      "Masaje Sueco",
+      "Aromaterapia",
+      "Espalda - hombros",
+      "Reductores",
+      "tailandes",
+      "lumbar",
+    ],
   },
 ];
 
@@ -283,29 +484,5 @@ export const skills: SkillsProps[] = [
     id: 12,
     skill: "MongoDB",
     level: Math.floor(0.7 * 100) + 1,
-  },
-];
-
-export const education: ProjectCardProps[] = [
-  {
-    id: 1,
-    projectName: "ESPE- INGENIERIA MECATRONICA",
-    projectDescription:
-      "Mechatronics engineering studies the synergic integration of knowledge of mechanical engineering, electronics and control, to create, design, implement and operate machines and equipment in order to technify the production processes of the industrial sector, business and society's requirements, increasing the added value.",
-    projectImageLogo: espeImg,
-    link: "https://mecatronica.espe.edu.ec/#",
-    buttonText: "View Information",
-    tech: [],
-  },
-  {
-    id: 2,
-    projectName: "Applied Data Science",
-    projectDescription:
-      "Data Analysis & Visualization, Data exploration, Networks, Clustering, Machine Learning , Regression, Classification, Logistics & kNN, Practical Data Science, Decision Trees & Random Forest, Time Series, Deeplearning – Neural Networks, CNN, GNN, Recommendation Systems",
-    projectImageLogo:
-      "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/57173128",
-    link: "https://www.credential.net/da0b7af3-44d1-462f-aaaf-e37e146b9c70#gs.fz130v",
-    buttonText: "View Certification",
-    tech: [],
   },
 ];

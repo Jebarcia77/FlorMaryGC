@@ -2,18 +2,25 @@ import React from "react";
 import { ReactComponent as Illustration } from "../assets/project.svg";
 import Heading from "../components/Heading";
 import ProjectCard from "../components/ProjectCard";
-import { projectsData, SECTIONS } from "../data/data";
 
-const ProjectsContainer: React.FC = () => {
+import { ProjectCardProps } from "../types/types";
+
+interface props {
+  header: string;
+  data: ProjectCardProps[];
+  id: string;
+}
+
+const ProjectsContainer = ({ header, data, id }: props) => {
   return (
     <div className="flex flex-col w-full my-6">
       <Heading
-        heading={SECTIONS[4]}
-        id="projects"
+        heading={header}
+        id={id}
         illustration={<Illustration className="max-h-48" />}
       />
       <div className="grid gap-6 mt-5 lg:grid-cols-3 justify-items-center md:grid-cols-1 auto-rows-fr">
-        {projectsData.map(
+        {data.map(
           ({
             id,
             projectName,

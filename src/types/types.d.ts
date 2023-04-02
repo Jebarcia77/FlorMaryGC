@@ -58,8 +58,8 @@ export type ProjectCardProps = {
   projectDescription: string;
   projectImageLogo: string;
   tech: string[];
-  link: string;
-  buttonText: string;
+  link?: string;
+  buttonText?: string;
 };
 
 export type SkillsProps = {

@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media only screen and (max-width: 767px) {
+  .div_overview {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .overviewtitle {
+    font-size: 24px;
+  }
+
+  .sectionHeader {
+    font-size: 32px !important;
+  }
+}

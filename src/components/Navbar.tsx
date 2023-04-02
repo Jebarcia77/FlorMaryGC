@@ -7,7 +7,7 @@ import {
 } from "@heroicons/react/solid";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import logoJB  from "../assets/logoinvert.png";
+import logoJB from "../assets/logo.png";
 import { useTheme } from "../context/ThemeProvider";
 import { MENU, NAME } from "../data/data";
 import { NavbarProps } from "../types/types";
@@ -70,7 +70,11 @@ const Navbar: React.FC<NavbarProps> = ({ menuShow, showMenu }) => {
         </div>
 
         <div className="flex-1 px-2 mx-2">
-          {scrollState ? <img src={logoJB} width={100} alt="logoJB"></img> : NAME}
+          {scrollState ? (
+            <img src={logoJB} width={100} alt="logoJB"></img>
+          ) : (
+            NAME
+          )}
         </div>
         <div className="flex-none navbar-end ">
           <div className="dropdown dropdown-end lg:flex">

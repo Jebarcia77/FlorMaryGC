@@ -7,7 +7,9 @@ const Heading: React.FC<HeadingProps> = ({ heading, id, illustration }) => {
       <div className="hidden pt-3 antialiased lg:flex" id={id}>
         {illustration}
       </div>
-      <div className="pt-10 ml-10 text-7xl md:text-center">{heading}</div>
+      <div className="pt-10 ml-10 text-7xl md:text-center sectionHeader">
+        {heading}
+      </div>
     </div>
   );
 };

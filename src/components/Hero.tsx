@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { ReactComponent as HeroIllustration } from "../assets/hero.svg";
 import { ReactComponent as Illustration } from "../assets/hero_illustration.svg";
 import { HeroProps } from "../types/types";
-import logoJB from "../assets/logoinvert.png";
+import logoJB from "../assets/logo.png";
 import { HERO_IMAGE } from "../data/data";
 
 const Hero: React.FC<HeroProps> = ({
@@ -21,8 +21,18 @@ const Hero: React.FC<HeroProps> = ({
         <HeroIllustration />
       </div>
 
-      <div className="text-justify hero-content text-neutral-content">
-        <div>
+      <div className="text-justify hero-content text-neutral-content div_overview">
+        <div
+          style={{
+            backgroundColor: "black",
+            borderRadius: "50%",
+            aspectRatio: "1",
+            width: "200px",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+          }}
+        >
           <img src={logoJB} alt="logoJB" />
         </div>
         <div className="rounded-full" style={{ width: "200px" }}>
@@ -37,12 +47,12 @@ const Hero: React.FC<HeroProps> = ({
             animate={{ scale: [0.5, 1] }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="mb-5 text-5xl font-bold text-left">
+            <h1 className="mb-5 text-5xl font-bold text-left overviewtitle">
               {greetingText}
             </h1>
-            <p className="mb-5">{greetingDescription}</p>
+            <p className="mb-5 overviewdes">{greetingDescription}</p>
             <Link
-              to={"experience"}
+              to={"estetica"}
               spy={true}
               smooth={true}
               duration={500}

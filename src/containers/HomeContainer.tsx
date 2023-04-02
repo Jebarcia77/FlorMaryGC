@@ -3,15 +3,14 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import {
   CTA_TEXT,
+  eduData,
+  fisioData,
   GREETING_DESCRIPTION,
   GREETING_TEXT,
   HERO_IMAGE,
 } from "../data/data";
-import ExperienceContainer from "./ExperienceContainer";
-import ProjectsContainer from "./ProjectsContainer";
-import SkillsContainer from "./SkillsContainer";
-import EducationContainer from "./EducationContainer";
 import ProjectsDataContainer from "./ProjectsDataContainer";
+import { cosmeatriaData, SECTIONS, labData } from "../data/data";
 
 const HomeContainer: React.FC = () => {
   return (
@@ -22,15 +21,27 @@ const HomeContainer: React.FC = () => {
         greetingDescription={GREETING_DESCRIPTION}
         buttonText={CTA_TEXT}
       />
-      <ExperienceContainer />
       <div className="px-12 divider" />
-      <SkillsContainer />
+
+      <ProjectsDataContainer
+        id={"estetica"}
+        data={cosmeatriaData}
+        header={SECTIONS[3]}
+      />
       <div className="px-12 divider" />
-      <ProjectsDataContainer />
+
+      <ProjectsDataContainer
+        id={"fisio"}
+        data={fisioData}
+        header={SECTIONS[4]}
+      />
       <div className="px-12 divider" />
-      <ProjectsContainer />
+
+      <ProjectsDataContainer id={"lab"} data={labData} header={SECTIONS[5]} />
       <div className="px-12 divider" />
-      <EducationContainer/>
+
+      <ProjectsDataContainer id={"acad"} data={eduData} header={SECTIONS[6]} />
+      <div className="px-12 divider" />
       <Footer />
     </div>
   );
