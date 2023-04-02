@@ -14,7 +14,7 @@ function App() {
     <ThemeContext.Provider value={value}>
       <Seo
         url={URL}
-        lang="en"
+        lang="es"
         metaDescription={GREETING_DESCRIPTION}
         keywords={KEYWORDS}
         image={IMAGE}

@@ -1,13 +1,17 @@
 import Image from "../assets/social.jpg";
 import gvcImage from "../assets/gvconboarding.png";
-import guukImage  from "../assets/guuk.png";
-import pammImage  from "../assets/pamm.png";
+import guukImage from "../assets/guuk.png";
+import pammImage from "../assets/pamm.png";
 import smartmeImg from "../assets/smartme.png";
 import espeImg from "../assets/mct.jpg";
 import myappImg from "../assets/myapp.png";
 import eda from "../assets/eda.jpg";
 import loan from "../assets/loan.jpeg";
 import customerpred from "../assets/customerpred.jpg";
+
+import profilePhoto from "../assets/profilePhoto.jpeg";
+import fisio1 from "../assets/fisio1.png";
+
 import {
   ImageType,
   MenuProps,
@@ -16,10 +20,16 @@ import {
   TimelineProps,
 } from "../types/types";
 export const URL = "https://awesome-portfolio.piyushmehta.com";
-export const NAME = "John Barcia - Developer & Data";
+export const NAME = "Flor María Gongora - Esteticista ";
 
-export const SECTIONS = ["Home", "Experience","Skills", "Web Development Projects","Data Analytics Projects"];
-export const HERO_IMAGE = "https://picsum.photos/id/1005/1600/1400";
+export const SECTIONS = [
+  "Inicio",
+  "Experiencia",
+  "Habilidades Y competencias",
+  "Estética y Cosmeatría",
+  "Auxiliar de Enfermería",
+];
+export const HERO_IMAGE = profilePhoto;
 export const CTA_TEXT = "Know More";
 export const MENU: MenuProps[] = [
   { key: 1, route: "home", name: SECTIONS[0] },
@@ -30,12 +40,10 @@ export const MENU: MenuProps[] = [
   { key: 5, route: "Education", name: SECTIONS[5] },
 ];
 
-export const GREETING_TEXT = "Software Developer & Data Scientist based in Quito, Ecuador";
+export const GREETING_TEXT =
+  "Esteticista Cosmeatra, Auxiliar de Enfermería fisioterapia y reahabilitación física & Laboratorio Clínico";
 export const GREETING_DESCRIPTION =
-   "I'm sSR advanced Front end developer with expertise in React JS/TS  and React Native with  3+ years of experience."+
-   "I've worked succesfully with multidisciplinary teams under SCRUM methodolgy in several web and mobile projects."+
-   "I have studied an Applied Data Science program on the MIT Professional education because data and its processing is essential for decision-making in any business and it is a plus for a developer."+
-   "And I'm learning every day, working hard to improve my hard and soft skills"
+  "Soy una esteticista cosmiatria competente, capacitada y experimentada, además de tener certificaciones y experiencia como auxiliar en enfermería y fisioterapia. He trabajado con pacientes de todas las edades y con diversas condiciones de salud. Mi objetivo es ayudar a mis pacientes a mejorar su bienestar físico y emocional a través de la aplicación de técnicas estéticas, cosmetológicas y terapéuticas.";
 
 export const EXPERIENCE: TimelineProps[] = [
   {
@@ -45,7 +53,8 @@ export const EXPERIENCE: TimelineProps[] = [
     logo: "http://www.telandweb.net/images/cssimg/logoGreen2.gif",
     start: "2020-02-01",
     end: "2020-11-01",
-    description: "- I worked on mobile applications (Extraredes), Servinarium, Confesiones, informative football apps, with flutter,node js,mysql and on landing pages using wordpress",
+    description:
+      "- I worked on mobile applications (Extraredes), Servinarium, Confesiones, informative football apps, with flutter,node js,mysql and on landing pages using wordpress",
   },
   {
     key: 2,
@@ -54,7 +63,8 @@ export const EXPERIENCE: TimelineProps[] = [
     logo: "https://initiumsoft.com/var/site/storage/images/9/1/2/0/219-20-esl-ES/Initium%20Logo_150.png",
     start: "2020-11-01",
     end: "now",
-    description: "I worked on several projects, withs frameworks as symphony, angular, and react, mainly as frontend developer",
+    description:
+      "I worked on several projects, withs frameworks as symphony, angular, and react, mainly as frontend developer",
   },
   {
     key: 3,
@@ -63,7 +73,8 @@ export const EXPERIENCE: TimelineProps[] = [
     logo: "https://static.wixstatic.com/media/387423_8710cb69f94942ac9533a3a9e110b7de~mv2.png/v1/fill/w_284,h_69,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Isologo%20Taimec.png",
     start: "2021-10-01",
     end: "2022-02-25",
-    description: "I worked on some mechatronics projects, including data science, using python ",
+    description:
+      "I worked on some mechatronics projects, including data science, using python ",
   },
   {
     key: 4,
@@ -72,7 +83,8 @@ export const EXPERIENCE: TimelineProps[] = [
     logo: "https://miro.medium.com/max/300/1*aGnLvSUPsxgvvai8lxbpBA.jpeg",
     start: "",
     end: "",
-    description: "Developing full stack App with react and python, and business administration app",
+    description:
+      "Developing full stack App with react and python, and business administration app",
   },
 ];
 export const KEYWORDS = [
@@ -98,17 +110,24 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: `https://www.servinarium.com/wp-content/uploads/2021/12/control-de-talleres-servinarium.png`,
     link: "https://www.servinarium.com/",
     buttonText: "View Project",
-    tech: ["Javascript","React Native", "TailwindCSS", "SCSS", "NodeJs","MySQL"],
+    tech: [
+      "Javascript",
+      "React Native",
+      "TailwindCSS",
+      "SCSS",
+      "NodeJs",
+      "MySQL",
+    ],
   },
   {
     id: 2,
     projectName: "GVC Onboarding",
     projectDescription:
       "Online onboarding webpage serving GVC GAESCO España with dynamics forms and validations, microservices, angular material, pdf generation. I Developed and implemented an onboarding page for a new user registration process, including fields for personal information and account setup, data validation and error handling.",
-    projectImageLogo: gvcImage,
+    projectImageLogo: fisio1,
     link: "https://onboarding.gvcgaesco.es/?hs_step=bienvenida/es",
     buttonText: "View Project",
-    tech: ["Typescript", "Angular","SCSS","AWS"],
+    tech: ["Typescript", "Angular", "SCSS", "AWS"],
   },
   {
     id: 3,
@@ -118,7 +137,15 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: guukImage,
     link: "https://guuk.initiumsoft.com/web/",
     buttonText: "View Project",
-    tech: ["Typescript", "React/ReactNative","SCSS", "MaterialUI","NodeJs","MySQL","AWS"],
+    tech: [
+      "Typescript",
+      "React/ReactNative",
+      "SCSS",
+      "MaterialUI",
+      "NodeJs",
+      "MySQL",
+      "AWS",
+    ],
   },
   {
     id: 4,
@@ -128,7 +155,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: smartmeImg,
     link: "http://pre.admin.smartmeapp.com/login",
     buttonText: "View Project",
-    tech: ["Javascript" ,"React","SCSS","MYSQL", "AWS"],
+    tech: ["Javascript", "React", "SCSS", "MYSQL", "AWS"],
   },
   {
     id: 5,
@@ -138,7 +165,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: pammImage,
     link: "https://www.mercantilseguros.com/index.html",
     buttonText: "View Project",
-    tech: ["Typescript","React", "SCSS", "Material UI","NodeJs","MYSQL"],
+    tech: ["Typescript", "React", "SCSS", "Material UI", "NodeJs", "MYSQL"],
   },
   {
     id: 6,
@@ -148,7 +175,7 @@ export const projects: ProjectCardProps[] = [
     projectImageLogo: myappImg,
     link: "",
     buttonText: "View Project",
-    tech: ["ReactcNative", "FastAPI","MongoDB"],
+    tech: ["ReactcNative", "FastAPI", "MongoDB"],
   },
 ];
 
@@ -161,7 +188,12 @@ export const projectsData: ProjectCardProps[] = [
     projectImageLogo: loan,
     link: "https://jebarcia77.github.io/Loan-Default-Prediction/",
     buttonText: "View Project",
-    tech: ["Logistic Regression", "Decision Trees", "Random Forest","Hyperparameter Tuning"],
+    tech: [
+      "Logistic Regression",
+      "Decision Trees",
+      "Random Forest",
+      "Hyperparameter Tuning",
+    ],
   },
   {
     id: 2,
@@ -171,11 +203,12 @@ export const projectsData: ProjectCardProps[] = [
     projectImageLogo: customerpred,
     link: "https://jebarcia77.github.io/Potential-Customers-Prediction/",
     buttonText: "View Project",
-    tech: ["Decision Trees", "Random Forest","Python","EDA"],
+    tech: ["Decision Trees", "Random Forest", "Python", "EDA"],
   },
   {
     id: 3,
-    projectName: "Analyzing marketing campaigns to help the CMO devise the next best marketing strategy.",
+    projectName:
+      "Analyzing marketing campaigns to help the CMO devise the next best marketing strategy.",
     projectDescription:
       "This project aims to analyze marketing campaign and sales data to address important business questions related to customer demographics, product preferences, channel performances, etc",
     projectImageLogo: eda,
@@ -194,32 +227,32 @@ export const skills: SkillsProps[] = [
   {
     id: 1,
     skill: "Javascript",
-    level: Math.floor(0.80 * 100) + 1,
+    level: Math.floor(0.8 * 100) + 1,
   },
   {
     id: 2,
     skill: "Python",
-    level: Math.floor(0.70 * 100) + 1,
+    level: Math.floor(0.7 * 100) + 1,
   },
   {
     id: 3,
     skill: "HTML/CSS",
-    level: Math.floor(0.90 * 100) + 1,
+    level: Math.floor(0.9 * 100) + 1,
   },
   {
     id: 4,
     skill: "React",
-    level: Math.floor(0.70 * 100) + 1,
+    level: Math.floor(0.7 * 100) + 1,
   },
   {
     id: 5,
     skill: "Symphony",
-    level: Math.floor(0.50 * 100) + 1,
+    level: Math.floor(0.5 * 100) + 1,
   },
   {
     id: 6,
     skill: "Angular",
-    level: Math.floor(0.70 * 100) + 1,
+    level: Math.floor(0.7 * 100) + 1,
   },
   {
     id: 7,
@@ -229,7 +262,7 @@ export const skills: SkillsProps[] = [
   {
     id: 8,
     skill: "Node js - Express",
-    level: Math.floor(0.60 * 100) + 1,
+    level: Math.floor(0.6 * 100) + 1,
   },
   {
     id: 9,
@@ -239,26 +272,26 @@ export const skills: SkillsProps[] = [
   {
     id: 10,
     skill: "PHP",
-    level: Math.floor(0.50 * 100) + 1,
+    level: Math.floor(0.5 * 100) + 1,
   },
   {
     id: 11,
     skill: "MYSQL",
-    level: Math.floor(0.70 * 100) + 1,
+    level: Math.floor(0.7 * 100) + 1,
   },
   {
     id: 12,
     skill: "MongoDB",
-    level: Math.floor(0.70 * 100) + 1,
+    level: Math.floor(0.7 * 100) + 1,
   },
 ];
-
 
 export const education: ProjectCardProps[] = [
   {
     id: 1,
     projectName: "ESPE- INGENIERIA MECATRONICA",
-    projectDescription:"Mechatronics engineering studies the synergic integration of knowledge of mechanical engineering, electronics and control, to create, design, implement and operate machines and equipment in order to technify the production processes of the industrial sector, business and society's requirements, increasing the added value.",
+    projectDescription:
+      "Mechatronics engineering studies the synergic integration of knowledge of mechanical engineering, electronics and control, to create, design, implement and operate machines and equipment in order to technify the production processes of the industrial sector, business and society's requirements, increasing the added value.",
     projectImageLogo: espeImg,
     link: "https://mecatronica.espe.edu.ec/#",
     buttonText: "View Information",
@@ -269,7 +302,8 @@ export const education: ProjectCardProps[] = [
     projectName: "Applied Data Science",
     projectDescription:
       "Data Analysis & Visualization, Data exploration, Networks, Clustering, Machine Learning , Regression, Classification, Logistics & kNN, Practical Data Science, Decision Trees & Random Forest, Time Series, Deeplearning – Neural Networks, CNN, GNN, Recommendation Systems",
-    projectImageLogo: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/57173128",
+    projectImageLogo:
+      "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/57173128",
     link: "https://www.credential.net/da0b7af3-44d1-462f-aaaf-e37e146b9c70#gs.fz130v",
     buttonText: "View Certification",
     tech: [],

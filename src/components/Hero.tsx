@@ -4,7 +4,8 @@ import { Link } from "react-scroll";
 import { ReactComponent as HeroIllustration } from "../assets/hero.svg";
 import { ReactComponent as Illustration } from "../assets/hero_illustration.svg";
 import { HeroProps } from "../types/types";
-import logoJB  from "../assets/logoinvert.png";
+import logoJB from "../assets/logoinvert.png";
+import { HERO_IMAGE } from "../data/data";
 
 const Hero: React.FC<HeroProps> = ({
   greetingText,
@@ -16,25 +17,29 @@ const Hero: React.FC<HeroProps> = ({
       className="relative min-h-screen pt-0 mt-0 antialiased hero bg-gradient-to-br from-primary to-secondary text-primary-content"
       id="home"
     >
-      
       <div className="fill-current custom-shape-divider-bottom-1628871186">
         <HeroIllustration />
       </div>
 
       <div className="text-justify hero-content text-neutral-content">
-      <div >
-        <img src={logoJB} alt="logoJB" />
-      </div>
-        <Illustration
+        <div>
+          <img src={logoJB} alt="logoJB" />
+        </div>
+        <div className="rounded-full" style={{ width: "200px" }}>
+          <img src={HERO_IMAGE} className="rounded-full" />
+        </div>
+        {/* <Illustration
           className="hidden fill-current lg:flex "
           style={{ width: "450px" }}
-        />
+        /> */}
         <div className="max-w-md ml-10">
           <motion.div
             animate={{ scale: [0.5, 1] }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="mb-5 text-5xl font-bold text-left">{greetingText}</h1>
+            <h1 className="mb-5 text-5xl font-bold text-left">
+              {greetingText}
+            </h1>
             <p className="mb-5">{greetingDescription}</p>
             <Link
               to={"experience"}
